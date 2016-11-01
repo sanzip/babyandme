@@ -47,40 +47,45 @@
 
 %{--</div>--}%
 
-
+<div class="container">
 <div class="fieldcontain ${hasErrors(bean: babyplacesInstance, field: 'contact', 'error')} required">
+<div class="form-group">
 	<label for="contact">
 		<g:message code="babyplaces.contact.label" default="Contact" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="contact" required="" value="${babyplacesInstance?.contact}"/>
-
+	<g:textField name="contact" required="" class="form-control" value="${babyplacesInstance?.contact}"/>
+</div>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: babyplacesInstance, field: 'description', 'error')} required">
+<div class="form-group">
 	<label for="description">
 		<g:message code="babyplaces.description.label" default="Description" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="description" required="" value="${babyplacesInstance?.description}"/>
-
+	<g:textField name="description" class="form-control" required="" value="${babyplacesInstance?.description}"/>
+</div>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: babyplacesInstance, field: 'location', 'error')} required">
+<div class="form-group">
 	<label for="location">
 		<g:message code="babyplaces.location.label" default="Location" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="location" required="" value="${babyplacesInstance?.location}"/>
-
+	<g:textField name="location" required="" class="form-control" value="${babyplacesInstance?.location}"/>
+</div>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: babyplacesInstance, field: 'placeName', 'error')} required">
+<div class="form-group">
 	<label for="placeName">
 		<g:message code="babyplaces.placeName.label" default="Place Name" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="placeName" required="" value="${babyplacesInstance?.placeName}"/>
-
+	<g:textField name="placeName" required="" class="form-control" value="${babyplacesInstance?.placeName}"/>
+</div>
+</div>
 </div>
 

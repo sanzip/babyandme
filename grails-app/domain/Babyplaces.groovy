@@ -6,11 +6,13 @@ class Babyplaces {
     String description
     String location
     String contact
+    //Image image
     static constraints = {
         placeName nullable:false
         description nullable:false, blank: false, maxSize: 1000
         location nullable:false
         contact nullable:false
+      //  image nullable:true, blank:true
 
     }
 }

@@ -7,11 +7,14 @@ class BabyplacesController {
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
     def index(Integer max) {
-        params.max = Math.min(max ?: 10, 100)
+        params.max = Math.min(max ?: 12, 100)
         respond Babyplaces.list(params), model: [babyplacesInstanceCount: Babyplaces.count()]
     }
 
     def show(Babyplaces babyplacesInstance) {
+        respond babyplacesInstance
+    }
+    def view(Babyplaces babyplacesInstance) {
         respond babyplacesInstance
     }
 
